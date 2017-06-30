@@ -1,0 +1,149 @@
+.amplify-cal {
+	font: normal 15px Helvetica Neue, Helvetica, Arial, sans-serif;
+    min-width: 280px;
+    width: 25%;
+    margin-left: 25%;
+}
+
+.amplify-cal .amplify-cal-row{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.amplify-cal .r-cell{
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.amplify-cal .r-head{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.amplify-cal .r-prev,
+.amplify-cal .r-next{
+    background-color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.amplify-cal .r-prev:before,
+.amplify-cal .r-next:before{
+    position: relative;
+    top: 0;
+    content: "";
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    border-top: 0.2em solid #222222;
+    transform: rotate(-45deg);
+}
+.amplify-cal .r-prev:before{
+    border-left: 0.2em solid #222222;
+    transform: rotate(-45deg);
+    margin-left: 0.3em;
+}
+.amplify-cal .r-prev:hover:before{
+    border-left-color: #ffffff;
+    border-top-color: #ffffff;
+}
+.amplify-cal .r-next:before{
+    border-right: 0.2em solid #222222;
+    transform: rotate(45deg);
+    margin-right: 0.3em;
+}
+.amplify-cal .r-next:hover:before{
+    border-right-color: #ffffff;
+    border-top-color: #ffffff;
+}
+.amplify-cal .r-prev:hover,
+.amplify-cal .r-next:hover{
+    background-color: #0066CC;
+}
+.amplify-cal .r-title{
+    flex-grow: 5;
+    flex-basis: max-content;
+}
+.amplify-cal .r-weekdays{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.amplify-cal .r-weekdays .r-cell{
+    font-weight: bold;
+}
+.amplify-cal .r-dates{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 6;
+    flex-basis: 0;
+}
+.amplify-cal .r-dates.r-fix{
+    flex-grow: 5;
+}
+.amplify-cal .r-dates .amplify-cal-row{
+    flex-grow: 1;
+}
+.r-calendar .r-dates .r-cell{
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+}
+.amplify-cal .r-cell.r-date{
+    cursor: pointer;
+    outline: none;
+}
+.amplify-cal .r-cell.r-date.r-today{
+    background-color: #ffffff;
+    border: solid 1px #0066CC;
+}
+.amplify-cal .r-cell.r-date:not(.r-past):hover{
+    background-color: #0066CC;
+    border: solid 1px #0066CC;
+    color: #ffffff;
+}
+.amplify-cal .r-cell.r-date.r-selected{
+    background-color: #000000;
+    border: solid 1px #000000;
+    color: #fff;
+}
+.amplify-cal .r-cell.r-date.r-past{
+    color: #999999;
+    cursor: not-allowed;
+}
+.amplify-cal .r-weeknum{
+    color: #999999;
+    font-size: 0.8em;
+}
+.amplify-cal{
+    position: relative;
+    width: 100%;
+}
+.amplify-cal:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.amplify-cal .amplify-cal-inner{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.calender-sel {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 400px;
+
+}
+
+.mrgnTp30 {
+    margin-top: 30px;
+}
